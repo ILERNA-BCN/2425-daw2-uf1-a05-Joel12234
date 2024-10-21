@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juega a Piedra, Papel o Tijera</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="vanta-bg"></div>
+
+    <div class="content">
+        <h1>¡Bienvenidos a Piedra, Papel, Tijera, Lagarto, Spock!</h1>
+        <div class="game-image">
+            <img src="./img/fotoinicio.webp"alt="Piedra, Papel y Tijera" class="inicio-img">
+        </div>
+        <p class="game-description">Elige una opción entre <strong>Piedra, Papel, Tijera, Lagarto o Spock</strong> y compite con tu oponente. Este juego, famoso por su aparición en la serie The Big Bang Theory, expande las reglas tradicionales del clásico "Piedra, Papel o Tijera". Las nuevas reglas añaden más diversión y posibilidades.</p>
+
+        <div class="game-rules">
+            <h2>¿Cómo se juega?</h2>
+            <ul>
+                <li><strong>Piedra</strong> aplasta a <strong>Tijera</strong> y aplasta a <strong>Lagarto</strong>.</li>
+                <li><strong>Tijera</strong> corta a <strong>Papel</strong> y decapita a <strong>Lagarto</strong>.</li>
+                <li><strong>Papel</strong> cubre a <strong>Piedra</strong> y desautoriza a <strong>Spock</strong>.</li>
+                <li><strong>Lagarto</strong> envenena a <strong>Spock</strong> y devora a <strong>Papel</strong>.</li>
+                <li><strong>Spock</strong> rompe a <strong>Tijera</strong> y vaporiza a <strong>Piedra</strong>.</li>
+            </ul>
+        </div>
+        
+        <a href="game.php">Jugar ahora</a>
+    </div>
+
+    <script>
+        VANTA.NET({
+            el: "#vanta-bg",
+            color: 0xff6f61,
+            backgroundColor: 0x000000,
+            points: 10.0,
+            maxDistance: 20.0,
+            spacing: 15.0
+        });
+    </script>
+</body>
+</html>
